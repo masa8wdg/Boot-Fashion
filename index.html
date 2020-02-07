@@ -102,15 +102,15 @@
     <header class="header mb-5 pb-5 pos-f-t">
     <!-- ヘッダーの構成 -->
       <div class="collapse" id="navbarToggle">
-        <ul class="nav bg-dark py-3">
-          <li class="nav-item ml-sm-auto" style="margin-left: 10%">
-            <a class="nav-link text-white" href="#">ログイン</a>
+        <ul class="nav bg-dark py-3 row mx-auto">
+          <li class="nav-item col-4 col-sm-1 ml-auto mr-sm-5 mr-lg-0">
+            <a class="nav-link text-white text-nowrap" href="#">ログイン</a>
           </li>
-          <li class="nav-item ml-5 mx-sm-3">
-            <a class="nav-link text-white" href="#">会員登録</a>
+          <li class="nav-item col-4 col-sm-1 mx-sm-5 mx-lg-0">
+            <a class="nav-link text-white text-nowrap" href="#">会員登録</a>
           </li>
-          <li class="nav-item ml-5 ml-sm-3" style="margin-right: 10%">
-            <a class="nav-link text-white" href="#">お気に入り</a>
+          <li class="nav-item col-4 col-sm-1 mx-sm-5 mx-lg-0 mr-lg-5">
+            <a class="nav-link text-white text-nowrap" href="#">お気に入り</a>
           </li>
         </ul>
       </div>
@@ -134,7 +134,7 @@
         <!-- ナビバーの構成 -->
         <div class="row my-5 pb-5 border-bottom border-secondary">
           <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
-            <a class="navbar-brand pl-2 mx-5" href="#" style="font-size: 1.5rem;">HOME</a>
+            <a class="navbar-brand pl-2 mx-5 d-none d-sm-flex" href="#" style="font-size: 1.5rem;">HOME</a>
               <ul class="navbar-nav mr-md-auto d-md-flex d-none">
                 <li class="nav-item ml-3"><a class="nav-link" href="#">WOMEN</a></li>
                 <li class="nav-item ml-3"><a class="nav-link" href="#">MEN</a></li>
@@ -142,9 +142,9 @@
                 <li class="nav-item ml-3"><a class="nav-link text-danger" href="#">SALE</a></li>
                 <li class="nav-item ml-3"><a class="nav-link" href="#">TOPICS</a></li>
               </ul>
-              <form class="form-inline mr-md-5 my-2 my-lg-0 pr-2 form-inline" style="flex-flow: nowrap;">
+              <form class="form-inline mx-auto mr-md-5 my-2 my-lg-0 pr-2 form-inline" style="flex-flow: nowrap;">
                 <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 1.5rem;">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                <button class="btn btn-outline-dark btn-lg my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
               </form>
             </nav>
         </div>
@@ -313,11 +313,12 @@
           <div class="accordion col-lg-6" id="newslist">
             <div class="card">
               <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   <p class="news-item-text m-0"><time class="pr-5 text-black-50" datetime="2020-00-00">2020.00.00</time>配送料無料キャンペーン実施中！！</p>
+                <h5 class="mb-0 row mx-auto">
+                  <button class="btn btn-light px-3 d-sm-flex" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <p class="news-item-text text-nowrap text-left m-0"><time class="pr-sm-4 text-black-50" datetime="2020-00-00">2020.00.00</time></p>
+                    <p class="news-item-text text-nowrap m-0">配送料無料キャンペーン実施中！！
+                    <span class="badge badge-danger text-nowrapmx-3 p-2 my-auto">New</span></p>
                   </button>
-                  <span class="badge badge-danger mx-3 p-2">New</span>
                 </h5>
               </div>
           
@@ -334,8 +335,9 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <p class="news-item-text m-0"><time class="pr-5 text-black-50" datetime="2020-00-00">2020.00.00</time>〇〇に春アイテムが掲載！！</p>
+                  <button class="btn btn-light collapsed px-3 d-sm-flex" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p class="news-item-text text-nowrap text-left m-0"><time class="pr-sm-4 text-black-50" datetime="2020-00-00">2020.00.00</time></p>
+                    <p class="news-item-text text-nowrap m-0">〇〇に春アイテムが掲載！！</p>
                   </button>
                 </h5>
               </div>
@@ -350,8 +352,9 @@
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
-                  <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <p class="news-item-text m-0"><time class="pr-5 text-black-50" datetime="2020-00-00">2020.00.00</time>スタッフスタイリング更新しました！！</p>
+                  <button class="btn btn-light collapsed px-3 d-sm-flex" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p class="news-item-text text-nowrap text-left m-0"><time class="pr-sm-4 text-black-50" datetime="2020-00-00">2020.00.00</time></p>
+                    <p class="news-item-text text-nowrap m-0">スタッフスタイリング更新しました！！</p>
                   </button>
                 </h5>
               </div>
