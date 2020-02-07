@@ -39,7 +39,7 @@
     }
     
     .news-item-text {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       letter-spacing: 2px;
       line-height: 2.0; 
     }
@@ -66,7 +66,7 @@
       left: 0;
       right: 0;
       bottom:0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.3);
     }
 
     .card-img-overlay.recruit-content > .card-title > a {
@@ -102,15 +102,15 @@
     <header class="header mb-5 pb-5 pos-f-t">
     <!-- ヘッダーの構成 -->
       <div class="collapse" id="navbarToggle">
-        <ul class="nav justify-content-end bg-dark py-3">
-          <li class="nav-item">
-            <a class="nav-link text-white mx-3" href="#">ログイン</a>
+        <ul class="nav bg-dark py-3">
+          <li class="nav-item ml-sm-auto" style="margin-left: 10%">
+            <a class="nav-link text-white" href="#">ログイン</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white mx-3" href="#">会員登録</a>
+          <li class="nav-item ml-5 mx-sm-3">
+            <a class="nav-link text-white" href="#">会員登録</a>
           </li>
-          <li class="nav-item" style="margin-right: 10%">
-            <a class="nav-link text-white ml-3" href="#">お気に入り</a>
+          <li class="nav-item ml-5 ml-sm-3" style="margin-right: 10%">
+            <a class="nav-link text-white" href="#">お気に入り</a>
           </li>
         </ul>
       </div>
@@ -127,7 +127,7 @@
       <main>
         <!-- ロゴタイトルの構成 -->
         <div class="row justify-content-center position-relative">
-          <h1 class="col-4"><a class="stretched-link" href="#"><img class="img-fluid" src="images/logo.jpg" alt="ロゴ"></a></h1>
+          <h1 class="col-12 text-hide text-center">Boot-Fashion<a class="stretched-link" href="#"><img class="img-fluid" src="images/logo.jpg" alt="ロゴ"></a></h1>
         </div>
         <!-- =================================================== -->
 
@@ -135,15 +135,15 @@
         <div class="row my-5 pb-5 border-bottom border-secondary">
           <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
             <a class="navbar-brand pl-2 mx-5" href="#" style="font-size: 1.5rem;">HOME</a>
-              <ul class="navbar-nav mr-auto d-md-flex d-none">
+              <ul class="navbar-nav mr-md-auto d-md-flex d-none">
                 <li class="nav-item ml-3"><a class="nav-link" href="#">WOMEN</a></li>
                 <li class="nav-item ml-3"><a class="nav-link" href="#">MEN</a></li>
                 <li class="nav-item ml-3"><a class="nav-link" href="#">KIDS</a></li>
                 <li class="nav-item ml-3"><a class="nav-link text-danger" href="#">SALE</a></li>
                 <li class="nav-item ml-3"><a class="nav-link" href="#">TOPICS</a></li>
               </ul>
-              <form class="form-inline mr-5 my-2 my-lg-0 pr-2">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 1.5rem;">
+              <form class="form-inline mr-md-5 my-2 my-lg-0 pr-2 form-inline" style="flex-flow: nowrap;">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 1.5rem;">
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
               </form>
             </nav>
@@ -151,23 +151,23 @@
         <!-- ===================================================== -->
 
         <!-- カルーセルの構成 -->
-        <div class="row m-5 bg-dark">
-          <div id="c1" class="col-12 carousel slide" data-ride="carousel">
+        <div class="row m-5">
+          <div id="c1" class="col-md-8 mx-auto carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#c1" data-slide-to="0" class="active"></li>
               <li data-target="#c1" data-slide-to="1"></li>
               <li data-target="#c1" data-slide-to="2"></li>
             </ol>
 
-            <div class="carousel-inner w-75 mx-auto">
+            <div class="carousel-inner mx-auto">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="images/spring-collection-min.jpg" alt=""  style="max-height: 470px;">
+                <img class="d-block w-100 img-fluid" src="images/spring-collection-min.jpg" alt=""  style="max-height: 430px;">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="images/sale-min.jpg" alt=""  style="max-height: 470px;">
+                <img class="d-block w-100 img-fluid" src="images/sale-min.jpg" alt=""  style="max-height: 430px;">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="images/acce-min.jpg" alt=""  style="max-height: 470px;">
+                <img class="d-block w-100 img-fluid" src="images/acce-min.jpg" alt=""  style="max-height: 430px;">
               </div>
             </div>
             <a class="carousel-control-prev" href="#c1" role="button" data-slide="prev"></span>
@@ -243,8 +243,8 @@
 
         <div class="row topics card-deck pt-5 border-bottom border-dark">
           <div class="col-lg-4 col-md-6 my-5">
-            <div class="card bg-dark text-white p-0" style="height: 100%;">
-              <img class="card-img img-fluid" src="images/topics-1-min.jpg" alt="" style="width: 100%; height: 470px; object-fit: cover;">
+            <div class="card bg-dark text-white p-0 h-100">
+              <img class="card-img img-fluid w-100 h-100" src="images/topics-1-min.jpg" alt="" style="object-fit: cover;">
               <div class="card-img-overlay topic-item">
                 <h5 class="card-title">
                   <b>Active</b><br>
@@ -259,8 +259,8 @@
           </div>
 
           <div class="col-lg-4 col-md-6 my-5">
-            <div class="card bg-dark text-white p-0" style="height: 100%;">
-              <img class="card-img img-fluid" src="images/topics-2-min.jpg" alt="" style="width: 100%; height: 470px; object-fit: cover;">
+            <div class="card bg-dark text-white p-0 h-100">
+              <img class="card-img img-fluid w-100 h-100" src="images/topics-2-min.jpg" alt="" style="object-fit: cover;">
               <div class="card-img-overlay topic-item">
                 <h5 class="card-title">
                   <b>The Gift </b><br>
@@ -274,8 +274,9 @@
           </div>
 
           <div class="col-lg-4 col-md-6 my-5">
-            <div class="card bg-dark text-white p-0" style="height: 100%;">
-              <img class="cadr-img img-fluid" src="images/topics-3-min.jpg" alt="" style="width: 100%; height: 470px; object-fit: cover;">
+            <div class="card bg-dark text-white p-0 h-100"> <!-- カードアイテムを囲うdivにh-100を指定することで、残りの3つとサイズが異なっても高さを合わせることができる -->
+              <img class="cadr-img img-fluid w-100 h-100" src="images/topics-3-min.jpg" alt="" style="min-height: 470px; object-fit: cover;">
+              <!-- 中身の多い3枚目のカードは中身がはみ出さない最低の高さをmin-heightで指定 -->
               <div class="card-img-overlay topic-item">
                 <h5 class="card-title">
                   <b>Recommend</b><br>
@@ -314,9 +315,9 @@
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                   <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   <p class="news-item-text m-0"><time class="pr-5 text-black-50" datetime="2020-00-00">2020.00.00</time>配送料無料キャンペーン実施中！！
-                    <span class="badge badge-danger">New</span></p>
+                   <p class="news-item-text m-0"><time class="pr-5 text-black-50" datetime="2020-00-00">2020.00.00</time>配送料無料キャンペーン実施中！！</p>
                   </button>
+                  <span class="badge badge-danger mx-3 p-2">New</span>
                 </h5>
               </div>
           
@@ -365,8 +366,8 @@
           <!-- ============================================================ -->
 
           <!-- サイドのカード -->
-          <div class="card bg-dark text-white recruit-img col-lg-5 col-8 mx-auto mr-lg-4 ml-lg-4 p-0 my-5 my-lg-0">
-            <img class="img-fluid" src="images/recruit-min.jpg" alt="" style="width: 100%; height: auto;">
+          <div class="card bg-dark text-white recruit-img col-lg-5 col-8 mx-auto mr-lg-4 ml-lg-4 p-0 my-5 my-lg-0" style="min-width: 360px;  min-height: 260px;">
+            <img class="img-fluid w-100 h-100" src="images/recruit-min.jpg" alt="" style="min-width: 360px;  min-height: 260px;">
             <div class="card-img-overlay recruit-content">
               <h5 class="card-title mt-5 pt-5">
                 <a href="#" class="card-link stretched-link">
@@ -383,7 +384,7 @@
 
         <!-- コンタクトの構成 -->
         <div class="row my-5 py-5 contact bg-light">
-          <p class="col-5 mb-5 mb-lg-0 mx-auto pl-md-5 align-self-center" style="white-space: nowrap;"><b>Boot-Fashion Offical</b></p>
+          <p class="col-5 mb-5 mb-lg-0 mx-auto p-0 pl-md-5 align-self-center" style="white-space: nowrap; min-width: 210px;"><b>Boot-Fashion Offical</b></p>
           <ul class="col-8 mx-auto col-lg-6 nav">
             <li class="nav-item mx-auto mx-md-5">
               <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
