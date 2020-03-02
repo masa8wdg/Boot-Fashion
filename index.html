@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boot-Fashion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
 
@@ -99,10 +99,10 @@
 
   </head>
   <body>
-    <header class="header mb-5 pb-5 pos-f-t">
     <!-- ヘッダーの構成 -->
+    <header class="header pos-f-t mb-5 pb-5 ">
       <div class="collapse" id="navbarToggle">
-        <ul class="nav bg-dark py-3 row mx-auto">
+        <ul class="nav row bg-dark py-3 mx-auto">
           <li class="nav-item col-4 col-sm-1 ml-auto mr-sm-5 mr-lg-0">
             <a class="nav-link text-white text-nowrap" href="#">ログイン</a>
           </li>
@@ -127,7 +127,11 @@
       <main>
         <!-- ロゴタイトルの構成 -->
         <div class="row justify-content-center position-relative">
-          <h1 class="col-12 text-hide text-center">Boot-Fashion<a class="stretched-link" href="#"><img class="img-fluid" src="images/logo.jpg" alt="ロゴ"></a></h1>
+          <h1 class="col-12 text-hide text-center">
+            <a class="stretched-link" href="#">Boot-Fashion
+              <img class="img-fluid" src="images/logo.jpg" alt="ロゴ">
+            </a>
+          </h1>
         </div>
         <!-- =================================================== -->
 
@@ -142,7 +146,7 @@
                 <li class="nav-item ml-3"><a class="nav-link text-danger" href="#">SALE</a></li>
                 <li class="nav-item ml-3"><a class="nav-link" href="#">TOPICS</a></li>
               </ul>
-              <form class="form-inline mx-auto mr-md-5 my-2 my-lg-0 pr-2 form-inline" style="flex-flow: nowrap;">
+              <form class="form-inline mx-auto mr-md-5 my-2 my-lg-0 pr-2" style="flex-flow: nowrap;">
                 <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 1.5rem;">
                 <button class="btn btn-outline-dark btn-lg my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
               </form>
@@ -151,8 +155,8 @@
         <!-- ===================================================== -->
 
         <!-- カルーセルの構成 -->
-        <div class="row m-5">
-          <div id="c1" class="col-md-8 mx-auto carousel slide" data-ride="carousel">
+        <div class="row m-5 justify-content-center">
+          <div id="c1" class="col-md-8 carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#c1" data-slide-to="0" class="active"></li>
               <li data-target="#c1" data-slide-to="1"></li>
@@ -275,7 +279,7 @@
 
           <div class="col-lg-4 col-md-6 my-5">
             <div class="card bg-dark text-white p-0 h-100"> <!-- カードアイテムを囲うdivにh-100を指定することで、残りの3つとサイズが異なっても高さを合わせることができる -->
-              <img class="cadr-img img-fluid w-100 h-100" src="images/topics-3-min.jpg" alt="" style="min-height: 470px; object-fit: cover;">
+              <img class="cadr-img img-fluid w-100" src="images/topics-3-min.jpg" alt="" style="min-height: 470px; object-fit: cover;">
               <!-- 中身の多い3枚目のカードは中身がはみ出さない最低の高さをmin-heightで指定 -->
               <div class="card-img-overlay topic-item">
                 <h5 class="card-title">
@@ -317,7 +321,7 @@
                   <button class="btn btn-light px-3 d-sm-flex" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <p class="news-item-text text-nowrap text-left m-0"><time class="pr-sm-4 text-black-50" datetime="2020-00-00">2020.00.00</time></p>
                     <p class="news-item-text text-nowrap m-0">配送料無料キャンペーン実施中！！
-                    <span class="badge badge-danger text-nowrapmx-3 p-2 my-auto">New</span></p>
+                    <span class="badge badge-danger text-nowrap mx-3 p-2 my-auto">New</span></p>
                   </button>
                 </h5>
               </div>
@@ -369,7 +373,7 @@
           <!-- ============================================================ -->
 
           <!-- サイドのカード -->
-          <div class="card bg-dark text-white recruit-img col-lg-5 col-8 mx-auto mr-lg-4 ml-lg-4 p-0 my-5 my-lg-0" style="min-width: 360px;  min-height: 260px;">
+          <div class="card bg-dark text-white recruit-img col-lg-5 col-8 mx-auto mr-lg-4 ml-lg-4 p-0 my-5 my-lg-0">
             <img class="img-fluid w-100 h-100" src="images/recruit-min.jpg" alt="" style="min-width: 360px;  min-height: 260px;">
             <div class="card-img-overlay recruit-content">
               <h5 class="card-title mt-5 pt-5">
@@ -420,7 +424,7 @@
           <li class="list-group-item"><b>ヘルプ</b></li>
           <li class="list-group-item"><a href="#" class="list-group-item-action">お問い合わせ</a></li>
           <li class="list-group-item"><a href="#" class="list-group-item-action">サイトマップ</a></li>
-          <li class="list-group-item"><a href="#" class="list-group-item-action">ご利用ガイド</a></li>
+          <li class="list-group-item"><a href="#" class="list-group-item-action">関連情報</a></li>
           <li class="list-group-item"><a href="#" class="list-group-item-action">重要なお知らせ</a></li>
         </ul>
 
